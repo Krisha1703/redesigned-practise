@@ -85,12 +85,12 @@ export default function Main() {
       </h1>
 
       {/* Dropdowns */}
-      <div className="flex justify-between w-full mb-6">
+      <div className="flex justify-between md:justify-center md:space-x-5 w-full mb-6">
         {/* CERF Level */}
         <select
           value={cerfLevel}
           onChange={(e) => setCerfLevel(e.target.value)}
-          className="bg-[#4A787D] text-white px-3 py-4 rounded focus:outline-none"
+          className="bg-[#4A787D] text-white px-3 py-4 md:px-6 rounded focus:outline-none"
         >
           <option value="" >
             CERF Level
@@ -107,7 +107,7 @@ export default function Main() {
         <select
           value={activityType}
           onChange={(e) => setActivityType(e.target.value)}
-          className="bg-[#4A787D] text-white px-3 py-4 rounded focus:outline-none"
+          className="bg-[#4A787D] text-white px-3 py-4 md:px-6 rounded focus:outline-none"
         >
           <option value="" >
             Activity Type
@@ -122,7 +122,7 @@ export default function Main() {
         <select
           value={course}
           onChange={(e) => setCourse(e.target.value)}
-          className="bg-[#4A787D] text-white px-3 py-4 rounded focus:outline-none"
+          className="bg-[#4A787D] text-white px-3 py-4 md:px-6 rounded focus:outline-none"
         >
           <option value="" >
             Course
@@ -135,7 +135,7 @@ export default function Main() {
 
       {/* Course Cards */}
       <div className="flex-1 overflow-y-auto pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6 gap-1">
           {filteredCourses.map((course, idx) => (
             <CourseCard
               key={idx}

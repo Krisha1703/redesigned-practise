@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer className="fixed bottom-0 w-full p-2 pt-5 border-b bg-[#4A787D] border-t shadow-inner">
-      <div className="flex justify-between px-6 py-2">
+      <div className="flex justify-between px-6 py-2 md:py-0">
         {menus.map((menu) => {
           const Icon = menu.icon;
           // Determine active menu based on current URL
